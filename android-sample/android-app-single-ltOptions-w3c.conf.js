@@ -1,12 +1,12 @@
 exports.config = {
-  user: process.env.LT_USERNAME || "shubhamr",
-  key: process.env.LT_ACCESS_KEY || "dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh",
+  user: process.env.LT_USERNAME || "ritamg",
+  key: process.env.LT_ACCESS_KEY || "acess_ky",
   logFile : './logDir/api.log',
   product : 'appAutomation',
   services: [
         ['lambdatest', {
             tunnel: false,
-            app_upload: true,
+            //app_upload: true,
             app:{
               app_name : "ritam", //provide your desired app name
               app_path : "proverbial_ios.ipa", //provide the local app location
@@ -28,7 +28,7 @@ exports.config = {
         deviceName: ".*",
         name: "ios_ltOptions",
         isRealMobile: true,
-        // app: process.env.LT_APP_ID||"lt://APP1016029691707325023010601",
+        app: process.env.LT_APP_ID||"lt://APP1016029691707325023010601",
         platformName: "ios",
         // enableCustomTranslation: true,
         // tunnel: true,
